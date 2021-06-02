@@ -606,7 +606,7 @@ body {
 
 .swiper2 .swiper-slide {
   margin: 10px auto 0;
-  width: 220px;
+  width: 217px;
   padding: 0;
   position: relative;
   height: 280px;
@@ -620,7 +620,7 @@ body {
 
 .slide-img-box {
   display: block;
-  width: 220px;
+  width: 217px;
   margin: 0 auto;
   padding: 0;
   height: 280px;
@@ -637,8 +637,8 @@ body {
   border: 1px solid white;
   position: absolute;
   z-index: -1;
-  top: -5px;
-  left: 18px;
+  top: -4px;
+  left: 22px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -650,8 +650,8 @@ body {
   border: 1px solid white;
   position: absolute;
   z-index: -1;
-  bottom: -5px;
-  right: 18px;
+  bottom: -4px;
+  right: 22px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
