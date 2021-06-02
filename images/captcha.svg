@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="251" height="87" viewBox="0 0 451 137">
+  <rect id="Rectangle_349" data-name="Rectangle 349" width="451" height="137" rx="5" fill="#ffe6af"/>
+  <g id="Group_797" data-name="Group 797" transform="translate(-1186.856 -1939)">
+    <path id="Union_164" data-name="Union 164" d="M5.176,26.637l5.409-5.768A11.911,11.911,0,0,0,0,14.151V0A24.4,24.4,0,0,1,9.914,2.1a25.484,25.484,0,0,1,8.1,5.7,26.935,26.935,0,0,1,2.273,2.726L25.474,5V26.146c0,.161,0,.319,0,.482h0v.009Z" transform="translate(1560.501 1955)" fill="#3a6dda"/>
+    <path id="Union_167" data-name="Union 167" d="M5.293,26.06l5.532-5.644A12.232,12.232,0,0,0,0,13.844V0A25.917,25.917,0,0,1,10.138,2.053a26.068,26.068,0,0,1,8.283,5.58A26.461,26.461,0,0,1,20.746,10.3l5.3-5.41v20.69c0,.157,0,.313,0,.472h0v.01Z" transform="translate(1534.856 1981.058) rotate(-90)" fill="#5090f4"/>
+    <path id="Union_165" data-name="Union 165" d="M5.176,26.637l5.409-5.768A11.91,11.91,0,0,0,0,14.15V0A24.4,24.4,0,0,1,9.914,2.1a25.459,25.459,0,0,1,8.1,5.7,26.733,26.733,0,0,1,2.273,2.724L25.474,5V26.144c0,.161,0,.32,0,.483h0v.01Z" transform="translate(1560.501 2007.115) rotate(180)" fill="#c1c1c1"/>
+    <path id="Union_166" data-name="Union 166" d="M5.293,26.06l5.532-5.644A12.232,12.232,0,0,0,0,13.844V0A25.917,25.917,0,0,1,10.138,2.053a26.068,26.068,0,0,1,8.283,5.58A26.461,26.461,0,0,1,20.746,10.3l5.3-5.41v20.69c0,.157,0,.313,0,.472h0v.01Z" transform="translate(1586.156 1981.056) rotate(90)" fill="#9c9c9c"/>
+  </g>
+  <text id="I_m_not_a_robot" data-name="I&apos;m not a robot" transform="translate(113 74)" fill="#050815" font-size="18" font-family="Poppins-Regular, Poppins" letter-spacing="0.1em"><tspan x="0" y="0">I&apos;m not a robot</tspan></text>
+  <text id="reCAPTCHA" transform="translate(328 99)" fill="#050815" font-size="14" font-family="Poppins-Regular, Poppins" letter-spacing="0.1em"><tspan x="0" y="0">reCAPTCHA</tspan></text>
+  <text id="Privacy_-_Terms" data-name="Privacy - Terms" transform="translate(315 119)" fill="#050815" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" letter-spacing="0.1em"><tspan x="0" y="0">Privacy - Terms</tspan></text>
+  <g id="Rectangle_350" data-name="Rectangle 350" transform="translate(42 42)" fill="none" stroke="#020b2a" stroke-width="1">
+    <rect width="47" height="47" rx="2" stroke="none"/>
+    <rect x="0.5" y="0.5" width="46" height="46" rx="1.5" fill="none"/>
+  </g>
+</svg>

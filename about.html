@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./aos/aos.css" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="spot-bg-clr">
+  <!-- social-bar-fixed  -->
+  <div class="social-fixed"></div>
+
+  <!-- header -->
+  <header>
+    <div class="navigation ">
+      <ul class="">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" data-bs-toggle="collapse" href="#collapseabout"
+            id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            aria-controls="collapseabout">
+            ABOUT
+          </a>
+        </li>
+        <div class="collapse" id="collapseabout">
+          <div class="p-0 card-body">
+            <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+            <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+            <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="service.html">SERVICES</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapsesector" id="navbarDropdown about"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="collapseabout">
+            SECTORS
+          </a>
+        </li>
+        <div class="collapse" id="collapsesector">
+          <div class="p-0 card-body">
+            <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+            <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blogs.php">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactUs.html">CONTACT</a>
+        </li>
+
+      </ul>
+    </div>
+    <span class="bar d-block d-md-none" onclick="expand()"></span>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-0 ">
+      <div class="container py-4">
+        <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" class="" width="350px"></a>
+        <button class="navbar-toggler" type="button" style="width: 100px;" onclick="expand()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse d-md-block" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="/">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="about.html" id="navbarDropdown about" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                ABOUT
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">SERVICES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown sectors" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                SECTORS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+                <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.php">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">CONTACT</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- header ends  -->
+
+  <!-- about us main  -->
+
+  <div id="aboutUs-home-section">
+    <!-- overlay rectangle  -->
+    <img src="./images/Path 546.png" alt="" class="overlay-blue">
+    <!-- overlay rectangle  -->
+    <div class="text-area-about text-uppercase">
+      <h1 class="about-home-title os-regular text-white">About<span class="spot-clr"> US</span></h1>
+      <p class="os-light aboutUs-tagline">Let <span class="spot-clr os-bold">Magi-A </span>work it’s magic on your
+        restaurant</p>
+    </div>
+
+  </div>
+
+  <!-- about us main  -->
+
+  <!-- section who we are  -->
+
+  <div class="section-who-we-are">
+
+    <div class="heading-who-we-are text-center">
+      <h1 class="side-flags-dark os-light wwd-h about-h-tags">
+        WHO <span class="spot-clr os-bold text-shadow">WE ARE</span></h1>
+    </div>
+
+    <div class="who-we-are-main-content mt-4 mx-auto">
+
+      <div id="tilt-img" class="d-none d-sm-block d-md-block" data-aos="fade-right" data-aos-once="true"
+        data-aos-duration="1300">
+        <img src="images/Mask Group 58.png" alt="">
+      </div>
+
+      <div class="para-section text-left pop-light " data-aos="fade-left" data-aos-once="true" data-aos-duration="1300">
+
+        <p>Owing a restaurant/Cafe is a wholesome experience. It is much more than a business. So many
+          memories are made in a restaurant, someone celebrating their anniversary, or a birthday, and someone else
+          being proposed to. Over the years, restaurant have evolved from being a mere eating place, to a place people
+          go to take a break from their busy lives and reconnect with their loved ones.
+        </p>
+
+        <p>
+          So, before you start a restaurant business, you have kept in mind all these
+          people, give them the best, and to do that, you need the best.
+        </p>
+
+        <p>
+          <span>Magi-a</span> hospitality and food consultancy is a leading chain of consultancy
+          firm, with the sole purpose of turning your restaurant into your customer’s
+          dream restaurant. We provide consultancy and management services along
+          with planning, designing, execution and staffing, to new and existing
+          restaurant owners.
+        </p>
+
+        <p>
+          <span>Magi-a</span> provides a complete service, right from the scratch to the very end.
+          Once you’re tied up with us, your dream is our dream
+        </p>
+
+        <p>
+          We believe in our ethics, monetary gains are secondary, customer
+          satisfaction is always on top.
+        </p>
+
+        <p>
+          With <span>Magi-a</span>, you can be well assured that your business is in the right hands.
+          Your staffing and management will be smoothly handled by us.
+        </p>
+
+        <p>We have a team of professional ventilation, Interior, Kitchen-Bar Consultants
+          including the final contractors who will execute your project. <span>Magi-a</span> does not
+          charge any extra fees for third party consultations.
+        </p>
+
+        <p>
+          Our director believes in originality and creativity, which is why all our Cafés &
+          Restaurants are uniquely themed and have different menus, designed entirely
+          for our clients.
+        </p>
+
+        <p>
+          Our services are wide ranged and we cover everything that a restaurant
+          business would ever need.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- who we are  -->
+
+  <div class="our-mission-section">
+
+    <div class="heading-who-we-are text-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1300">
+      <h1 class="side-flags-dark os-light wwd-h py-5 about-h-tags">
+        OUR <span class="spot-clr os-bold text-shadow">MISSION & VISION</span></h1>
+    </div>
+
+    <div class="para-section mx-auto pop-light" data-aos="fade-up" data-aos-once="true" data-aos-duration="1300">
+
+      <p class="text-justify">
+        <span> Magi-a</span> was started with the mission to help restaurant owners across India and the world learn all
+        the basics of operating a restaurant and getting the maximum profits.
+      </p>
+      <p class="text-justify">
+        Our clients are extremely important to us, and to this day, every one of them has returned with satisfied smile
+        on their faces. We will strive to uphold that very image.
+      </p>
+      <p class="text-justify">
+        Our vision is to take Magi-a to newer heights, establish ourselves in Pan-Asia & Abroad.
+      </p>
+
+    </div>
+
+
+  </div>
+  <!-- our mission section end  -->
+
+  <!-- our presence section  -->
+
+  <div class="our-presence-section text-center mb-5">
+    <div class="heading-who-we-are text-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1300">
+      <h1 class="side-flags-dark os-light about-h-tags wwd-h ">
+        OUR <span class="spot-clr os-bold text-shadow">PRESENCE</span></h1>
+    </div>
+    <img src="./images/map.svg" alt="" width="800px" data-aos="fade-in" data-aos-offset="300" data-aos-once="true"
+      data-aos-duration="1300">
+
+  </div>
+
+  <!-- our presence section  -->
+
+  <!-- footer   -->
+
+
+  <div class="container-fluid mx-auto w-100 h-100 footer-bg d-flex flex-column justify-content-center  ">
+    <!-- footer main container -->
+
+
+    <div
+      class="upperfooter row w-100 d-flex justify-content-center justify-content-md-around align-items-center mx-auto py-3">
+
+      <div class="form-container col-12 col-md-4 mx-auto d-flex flex-column justify-content-center">
+        <h5 class="text-uppercase text-center os-regular">reach out to us</h5>
+
+        <form action="" method="get" class="form-footer col-3">
+          <div class="form-input-control">
+            <div class="label">
+              <label for="name">Name</label>
+            </div>
+            <input type="text" required placeholder="Enter Your Name" name="name">
+          </div>
+          <div class="form-input-control">
+            <div class="label">
+              <label for="email">Email</label>
+            </div>
+            <input type="email" required placeholder="Enter Your Email" name="email">
+          </div>
+          <div class="form-input-control">
+            <div class="label">
+              <label for="phone">Phone</label>
+            </div>
+            <input type="number" required placeholder="Enter Your Phone" name="phone">
+          </div>
+          <div class="form-input-control">
+            <div class="label">
+              <label for="message">Message</label>
+            </div>
+            <input type="text" required placeholder="Write Your Message" name="message" />
+          </div>
+          <div class="form-input-control mt-3 px-4"></div>
+          <button class="btn btn-dark os-light rounded-pill d-block mx-auto py-1" style="letter-spacing: 3px;"
+            type="submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <div class="address col-12 col-md-5">
+
+        <div class="col-auto row d-flex flex-column justify-content-between align-items-center text-center">
+          <!-- logo -->
+          <div class="d-none d-md-block">
+            <img src="images/magiLogo.svg" alt="logo" width="200px" height="100px">
+          </div>
+          <!-- address -->
+          <div class=" text-white d-none d-md-block">
+            <h4 class="company-heading m-0 p-0 el-bold">MAGIA HOSPITALITY & CONSULTANCY</h4>
+            <address class="text-center pop-x-light">
+              Building No. XX New Delhi 11000X <br>
+              Email: info@magia.com <br>
+              Phone: +91 XXXXXXXXXX
+            </address>
+          </div>
+          <!-- share follow -->
+          <div class=" text-white social-icons">
+            <h3 class="mb-5 os-light d-none d-md-block">FOLLOW US</h3>
+            <div class="icons d-flex justify-content-center align-items-center">
+              <a href="" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="" class="tw"><i class="fab fa-twitter"></i></a>
+              <a href="" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="" class="yt"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-btn d-none d-lg-flex col-12 col-md-3 align-items-center justify-content-center ">
+        <!-- <a class="col-2 bg-none text-white d-flex align-items-end justify-content-end " href="#home"> -->
+        <i class="fas fa-arrow-up text-dark bg-warning px-3 py-3 rounded-circle"></i>
+        <!-- </a> -->
+      </div>
+    </div>
+
+    <ul class="list-unstyled lowerFooter p-0 mx-auto container-fluid d-flex justify-content-between align-items-center">
+
+      <li class="footer-items grey-clr">All Rights Reserved <span class="text-uppercase text-white"> 2021
+          magia.com</span></li>
+
+      <li class="footer-items grey-clr">Designed By <span class="text-uppercase text-white">Awarno.com</span></li>
+    </ul>
+  </div>
+
+
+  <!-- footer   -->
+
+  <!-- script  -->
+  <script src="./aos/aos.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

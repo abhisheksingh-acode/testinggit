@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>what sets magi</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="spot-bg-clr">
+   <!-- social-bar-fixed  -->
+   <div class="social-fixed"></div>
+   <!-- header  -->
+   <header>
+      <div class="navigation ">
+         <ul class="">
+            <li class="nav-item">
+               <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapseabout"
+                  id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  aria-controls="collapseabout">
+                  ABOUT
+               </a>
+            </li>
+            <div class="collapse" id="collapseabout">
+               <div class="p-0 card-body">
+                  <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                  <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                  <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+               </div>
+            </div>
+            <li class="nav-item">
+               <a class="nav-link" href="service.html">SERVICES</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link active dropdown-toggle" data-bs-toggle="collapse" href="#collapsesector"
+                  id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  aria-controls="collapseabout">
+                  SECTORS
+               </a>
+            </li>
+            <div class="collapse" id="collapsesector">
+               <div class="p-0 card-body">
+                  <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+                  <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+               </div>
+            </div>
+            <li class="nav-item">
+               <a class="nav-link" href="projects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="blogs.php">BLOG</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="contactUs.html">CONTACT</a>
+            </li>
+
+         </ul>
+      </div>
+      <span class="bar d-block d-md-none" onclick="expand()"></span>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-0 ">
+         <div class="container py-4">
+            <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" class="" width="350px"></a>
+            <button class="navbar-toggler" type="button" style="width: 100px;" onclick="expand()">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse d-md-block" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                     <a class="nav-link" aria-current="page" href="/">HOME</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown about" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        ABOUT
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                        <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="service.html">SERVICES</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link active dropdown-toggle" href="about.html" id="navbarDropdown sectors"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SECTORS
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+                        <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="projects.html">PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blogs.php">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contactUs.html">CONTACT</a>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+
+
+   <div id="what-sets-home-section">
+      <div class="text-area-team text-uppercase">
+         <h1 class="what-sets-home-title os-regular text-white">WHAT SETS <span class="spot-clr">MAGI-A APART</span>
+         </h1>
+         <p class="os-light aboutUs-tagline"><span class="spot-clr os-bold">Magi-A </span> a Dream of every restaurant
+            owner</p>
+      </div>
+   </div>
+
+   <div class="heading-what-sets-magia text-center ">
+      <h1 class="side-flags-dark text-uppercase os-light wwd-h about-h-tags my-5 "
+         style="letter-spacing: 10px; padding: 15px 50px;">
+         what sets <span class="spot-clr os-bold text-shadow"> magi-a apart</span></h1>
+   </div>
+
+   <div class="row-section my-5" style="overflow: hidden;">
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>01</h1>
+         </div>
+         <p>Before providing any service our team of specialists will visit your restaurant, or sit down with the owner
+            to
+            know his vision. We do this in order to provide our clients with the best suited services for their dream
+            restaurant.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>02</h1>
+         </div>
+         <p>A minimum of 1 year of support is provided with staff Hiring, Operational, Marketing & Auditing support.
+         </p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>03</h1>
+         </div>
+         <p>Outdoor catering or ODC is a crucial part for restaurants to earn maximum profits. Crucial but often
+            overlooked. Magi-a take cares of ODC and makes sure that our client is the getting the most out of his
+            business. </p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>04</h1>
+         </div>
+         <p>Re-hiring of staff, in case the staff leaves is done within 10 days with no hassle. We also make sure that
+            the
+            salary is as per budget guidelines to ensure profit, a normal salary structure to a breakeven is 25% to 30%
+            and
+            further decreases if sales grow upto 17% to 18% of sale in a Restaurant & Cafe</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>05</h1>
+         </div>
+         <p>The initial Operations and Management are completely done by the consultancy firm, for at least a year. </p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>06</h1>
+         </div>
+         <p>The owner is the epicentre, and within the time that Magi-a is connected to your company, we will train the
+            owner to operate in a way that keeps the expense to the minimum and the profit, to the maximum. </p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>07</h1>
+         </div>
+         <p>Every restaurant is different, the theme, the guests, and we provide custom, tailor made SOP, DSA &
+            Checklists
+            that will perfectly suit your outlet. </p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>08</h1>
+         </div>
+         <p>Every restaurant is different, the theme, the guests, and we provide custom, tailor made SOP, DSA &
+            Checklists
+            that will perfectly suit your outlet. </p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>09</h1>
+         </div>
+         <p>Proving the best services while staying within our client’s budget is what makes Magi-a stand out from the
+            rest. We first get a deep understating of the Budget and working of our client and then proceed, so that
+            even we our term ends, the client is experiencing nothing but profits.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>10</h1>
+         </div>
+         <p>We dot merely hire staff and send them. We train them at our outlets to suit’s our client’s needs. And once
+            they reach, they provided with on-site training as well.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>11</h1>
+         </div>
+         <p>We aim to provide our clients with the best vendor rates without compromising with the quality.
+            (Guaranteed by Magi-a)</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>12</h1>
+         </div>
+         <p>We aim to provide our clients with the best vendor rates without compromising with the quality.
+            (Guaranteed by Magi-a)</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>13</h1>
+         </div>
+         <p>We aim to provide our clients with the best vendor rates without compromising with the quality.
+            (Guaranteed by Magi-a)</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>14</h1>
+         </div>
+         <p>Unlike other consultancies, Magi-a provides an assured ROI of up to 2.5 to 3 years at a time.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>15</h1>
+         </div>
+         <p>We have in-house chefs and staff that are provided to our clients, in case a staff leave pr resigns. So, we
+            do not have to look for a replacement in a hurry but can take out time to calmly choose the best staff.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>16</h1>
+         </div>
+         <p>A new restaurant faces new problems every day, no doubt. Magi-a guarantees that problem-solving will
+            be provided in 48 hours, no matter the problem.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>17</h1>
+         </div>
+         <p>Every restaurant has a unique Food & Bar menu that fits to its theme and the guests. We never copy the
+            menu via internet or any other source.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>18</h1>
+         </div>
+         <p>A world cuisine menu is provided for your customer’s best dining experience.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>19</h1>
+         </div>
+         <p>A world cuisine menu is provided for your customer’s best dining experience</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>20</h1>
+         </div>
+         <p>Our retainer-ship charge is comparatively low unlike other consultant firms. It will easily fit our client’s
+            budget and not give them a mild panic attack. </p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-up" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>21</h1>
+         </div>
+         <p>Licensing is often the tough part in a business. Our clients although, do not have to worry about it at all.
+            We take care of the licensing in terms of Fire, Liquor, PPL & Trademarks.</p>
+      </div>
+      <div class="outer-inner-bar-div" data-aos="flip-down" data-aos-once="true" data-aos-duration="1000">
+         <div class="inner-nos">
+            <h1>22</h1>
+         </div>
+         <p>We introduce new menus every 6 months and also limited time menus for festivals. It is always a profit to
+            zing things up and keep your customers excited.</p>
+      </div>
+
+   </div>
+
+   <!-- footer  -->
+
+   <div class="container-fluid mx-auto w-100 h-100 footer-bg d-flex flex-column justify-content-center  ">
+      <!-- footer main container -->
+
+
+      <div
+         class="upperfooter row w-100 d-flex justify-content-center justify-content-md-around align-items-center mx-auto py-3">
+
+         <div class="form-container col-12 col-md-4 mx-auto d-flex flex-column justify-content-center">
+            <h5 class="text-uppercase text-center os-regular">reach out to us</h5>
+
+            <form action="" method="get" class="form-footer col-3">
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="name">Name</label>
+                  </div>
+                  <input type="text" required placeholder="Enter Your Name" name="name">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="email">Email</label>
+                  </div>
+                  <input type="email" required placeholder="Enter Your Email" name="email">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="phone">Phone</label>
+                  </div>
+                  <input type="number" required placeholder="Enter Your Phone" name="phone">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="message">Message</label>
+                  </div>
+                  <input type="text" required placeholder="Write Your Message" name="message" />
+               </div>
+               <div class="form-input-control mt-3 px-4"></div>
+               <button class="btn btn-dark os-light rounded-pill d-block mx-auto py-1" style="letter-spacing: 3px;"
+                  type="submit">SUBMIT</button>
+            </form>
+         </div>
+
+         <div class="address col-12 col-md-5">
+
+            <div class="col-auto row d-flex flex-column justify-content-between align-items-center text-center">
+               <!-- logo -->
+               <div class="d-none d-md-block">
+                  <img src="images/magiLogo.svg" alt="logo" width="200px" height="100px">
+               </div>
+               <!-- address -->
+               <div class=" text-white d-none d-md-block">
+                  <h4 class="company-heading m-0 p-0 el-bold">MAGIA HOSPITALITY & CONSULTANCY</h4>
+                  <address class="text-center pop-x-light">
+                     Building No. XX New Delhi 11000X <br>
+                     Email: info@magia.com <br>
+                     Phone: +91 XXXXXXXXXX
+                  </address>
+               </div>
+               <!-- share follow -->
+               <div class=" text-white social-icons">
+                  <h3 class="mb-5 os-light d-none d-md-block">FOLLOW US</h3>
+                  <div class="icons d-flex justify-content-center align-items-center">
+                     <a href="" class="fb"><i class="fab fa-facebook-f"></i></a>
+                     <a href="" class="tw"><i class="fab fa-twitter"></i></a>
+                     <a href="" class="li"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="" class="yt"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="top-btn d-none d-lg-flex col-12 col-md-3 align-items-center justify-content-center ">
+            <!-- <a class="col-2 bg-none text-white d-flex align-items-end justify-content-end " href="#home"> -->
+            <i class="fas fa-arrow-up text-dark bg-warning px-3 py-3 rounded-circle"></i>
+            <!-- </a> -->
+         </div>
+      </div>
+
+      <ul
+         class="list-unstyled lowerFooter p-0 mx-auto container-fluid d-flex justify-content-between align-items-center">
+
+         <li class="footer-items grey-clr">All Rights Reserved <span class="text-uppercase text-white"> 2021
+               magia.com</span></li>
+
+         <li class="footer-items grey-clr">Designed By <span class="text-uppercase text-white">Awarno.com</span></li>
+      </ul>
+   </div>
+
+
+   <!-- script  -->
+   <script src="./aos/aos.js"></script>
+   <script src=" ./js/index.js"></script>
+   <script>
+      AOS.init();
+   </script>
+</body>
+
+</html>

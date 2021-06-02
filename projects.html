@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Projects</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="spot-bg-clr">
+   <!-- social-bar-fixed  -->
+   <div class="social-fixed"></div>
+   <!-- header  -->
+   <header>
+      <div class="navigation ">
+         <ul class="">
+            <li class="nav-item">
+               <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapseabout"
+                  id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  aria-controls="collapseabout">
+                  ABOUT
+               </a>
+            </li>
+            <div class="collapse" id="collapseabout">
+               <div class="p-0 card-body">
+                  <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                  <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                  <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+               </div>
+            </div>
+            <li class="nav-item">
+               <a class="nav-link" href="service.html">SERVICES</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapsesector"
+                  id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  aria-controls="collapseabout">
+                  SECTORS
+               </a>
+            </li>
+            <div class="collapse" id="collapsesector">
+               <div class="p-0 card-body">
+                  <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+                  <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+               </div>
+            </div>
+            <li class="nav-item">
+               <a class="nav-link active" href="projects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="blogs.php">BLOG</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="contactUs.html">CONTACT</a>
+            </li>
+
+         </ul>
+      </div>
+      <span class="bar d-block d-md-none" onclick="expand()"></span>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-0 ">
+         <div class="container py-4">
+            <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" class="" width="350px"></a>
+            <button class="navbar-toggler" type="button" style="width: 100px;" onclick="expand()">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse d-md-block" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                     <a class="nav-link" aria-current="page" href="/">HOME</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown about" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        ABOUT
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                        <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="service.html">SERVICES</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown sectors" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        SECTORS
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+                        <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="projects.html">PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blogs.php">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contactUs.html">CONTACT</a>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- blogs section home  -->
+   <div id="projects-home-section">
+      <!-- overlay rectangle  -->
+      <img src="./images/Path 546.png" alt="" class="overlay-blue">
+      <!-- overlay rectangle  -->
+      <div class="text-area-projects text-uppercase">
+         <h1 class="projects-home-title os-regular text-white p-3">OUR <span class="spot-clr">PROJECTS</span></h1>
+         <p class="os-light sectors-tagline"><span class="spot-clr os-bold">MAGI-A</span> ARTWORK AND ITS SPREAD</p>
+      </div>
+   </div>
+
+   <div class="heading-who-we-are text-center">
+      <h1 class="side-flags-dark os-light wwd-h about-h-tags">
+         OUR <span class="spot-clr os-bold text-shadow">PROJECTS</span></h1>
+   </div>
+
+   <!-- allahbad  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Allahabad
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/allahbad01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Allahabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/allahbad02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Allahabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/allahbad03.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">03</h1>
+               <h3>Allahabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/allahbad04.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">04</h1>
+               <h3>Allahabad</h3>
+            </div>
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 97.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 98.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 99.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 100.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- azamgarh  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+
+      <h3 class="project-location-name my-4"><span class="">
+            Azamgarh
+         </span>
+      </h3>
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/azamgarh01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Azamgarh</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/azamgarh02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Azamgarh</h3>
+            </div>
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 154.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 98.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 99.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 100.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- banglore  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Banglore
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/banglore01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Banglore</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/banglore02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Banglore</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/banglore03.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">03</h1>
+               <h3>Banglore</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/banglore04.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">04</h1>
+               <h3>Banglore</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/banglore05.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">05</h1>
+               <h3>Banglore</h3>
+            </div>
+         </div>
+         <div class="empty-container">
+
+         </div>
+
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 105.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 106.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 107.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 108.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- mumbai  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Mumbai
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/mumbai01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Mumbai</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/mumbai02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Mumbai</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/mumbai03.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">03</h1>
+               <h3>Mumbai</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/mumbai04.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">04</h1>
+               <h3>Mumbai</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/mumbai05.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">05</h1>
+               <h3>Mumbai</h3>
+            </div>
+         </div>
+         <div class="empty-container">
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 152.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 153.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 111.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 112.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- dubai  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Dubai
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/dubai01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Dubai</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/dubai02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Dubai</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/dubai03.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">03</h1>
+               <h3>Dubai</h3>
+            </div>
+         </div>
+         <div class="empty-container">
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 141.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 140.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 115.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 116.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- heyderabad  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Heyderabad
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad03.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">03</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad04.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">04</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad05.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">05</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad06.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">06</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad07.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">07</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad08.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">08</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/hyderbad09.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">09</h1>
+               <h3>Heyderabad</h3>
+            </div>
+         </div>
+         <div class="empty-container">
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 117.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 142.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 119.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 143.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- patna  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Patna
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/Mask Group 85.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Patna</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/patna02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Patna</h3>
+            </div>
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 144.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 145.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 111.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 126.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- rohtak  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Rohtak
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/rohtak01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Rohtak</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/rohtak02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Rohtak</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/rohtak03.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">03</h1>
+               <h3>Rohtak</h3>
+            </div>
+         </div>
+         <div class="empty-container">
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 146.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 147.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 129.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 130.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- Tirupati  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Tirupati
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/tirupati01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Tirupati</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/tirupati02.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Tirupati</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/tirupati03.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">03</h1>
+               <h3>Tirupati</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/tirupati04.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">04</h1>
+               <h3>Tirupati</h3>
+            </div>
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 148.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 129.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 133.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 149.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- ludhiana  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            Ludhiana
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/ludhiana01.png" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Ludhiana</h3>
+            </div>
+         </div>
+         <div class="empty-container">
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 150.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 151.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 138.png" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 116.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+   <!-- jalandhar  -->
+   <div class="project-container container mx-auto py-0 px-0" data-aos="zoom-up" data-aos-duration="1500"
+      data-aos-once="true">
+
+      <h3 class="project-location-name my-4"><span class="">
+            jalandhar
+         </span>
+      </h3>
+
+      <div class="project-gallery d-flex justify-content-around align-items-around flex-wrap ">
+
+
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/jalanadhar01.jpeg" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">01</h1>
+               <h3>Jalandhar</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-below" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/jalanadhar02.jpeg" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-bottom" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">02</h1>
+               <h3>Jalandhar</h3>
+            </div>
+         </div>
+         <div class="project-gallery-card-top" data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+            <img src="./images/jalanadhar03.jpeg" alt="" class="img-fluid project-gallery-img">
+            <div class="nos-div nos-top" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+               <h1 class="">03</h1>
+               <h3>Jalandhar</h3>
+            </div>
+         </div>
+         <div class="empty-container">
+         </div>
+      </div>
+
+      <!-- sub cards one row -->
+      <div class="project-sub-card-container mx-auto w-100 d-flex justify-content-around align-items-center flex-wrap">
+
+         <div class="project-sub-cards">
+            <img src="./images/jalanadhar.JPG" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/jalanadhar.JPG.....jpg" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/jalanadharsub1.JPG......jpg" alt="" class="img-fluid">
+         </div>
+
+         <div class="project-sub-cards">
+            <img src="./images/Mask Group 116.png" alt="" class="img-fluid">
+         </div>
+
+      </div>
+   </div>
+
+   <!-- footer  -->
+
+   <div class="container-fluid mx-auto w-100 h-100 footer-bg d-flex flex-column justify-content-center  ">
+      <!-- footer main container -->
+
+
+      <div
+         class="upperfooter row w-100 d-flex justify-content-center justify-content-md-around align-items-center mx-auto py-3">
+
+         <div class="form-container col-12 col-md-4 mx-auto d-flex flex-column justify-content-center">
+            <h5 class="text-uppercase text-center os-regular">reach out to us</h5>
+
+            <form action="" method="get" class="form-footer col-3">
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="name">Name</label>
+                  </div>
+                  <input type="text" required placeholder="Enter Your Name" name="name">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="email">Email</label>
+                  </div>
+                  <input type="email" required placeholder="Enter Your Email" name="email">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="phone">Phone</label>
+                  </div>
+                  <input type="number" required placeholder="Enter Your Phone" name="phone">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="message">Message</label>
+                  </div>
+                  <input type="text" required placeholder="Write Your Message" name="message" />
+               </div>
+               <div class="form-input-control mt-3 px-4"></div>
+               <button class="btn btn-dark os-light rounded-pill d-block mx-auto py-1" style="letter-spacing: 3px;"
+                  type="submit">SUBMIT</button>
+            </form>
+         </div>
+
+         <div class="address col-12 col-md-5">
+
+            <div class="col-auto row d-flex flex-column justify-content-between align-items-center text-center">
+               <!-- logo -->
+               <div class="d-none d-md-block">
+                  <img src="images/magiLogo.svg" alt="logo" width="200px" height="100px">
+               </div>
+               <!-- address -->
+               <div class=" text-white d-none d-md-block">
+                  <h4 class="company-heading m-0 p-0 el-bold">MAGIA HOSPITALITY & CONSULTANCY</h4>
+                  <address class="text-center pop-x-light">
+                     Building No. XX New Delhi 11000X <br>
+                     Email: info@magia.com <br>
+                     Phone: +91 XXXXXXXXXX
+                  </address>
+               </div>
+               <!-- share follow -->
+               <div class=" text-white social-icons">
+                  <h3 class="mb-5 os-light d-none d-md-block">FOLLOW US</h3>
+                  <div class="icons d-flex justify-content-center align-items-center">
+                     <a href="" class="fb"><i class="fab fa-facebook-f"></i></a>
+                     <a href="" class="tw"><i class="fab fa-twitter"></i></a>
+                     <a href="" class="li"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="" class="yt"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="top-btn d-none d-lg-flex col-12 col-md-3 align-items-center justify-content-center ">
+            <!-- <a class="col-2 bg-none text-white d-flex align-items-end justify-content-end " href="#home"> -->
+            <i class="fas fa-arrow-up text-dark bg-warning px-3 py-3 rounded-circle"></i>
+            <!-- </a> -->
+         </div>
+      </div>
+
+      <ul
+         class="list-unstyled lowerFooter p-0 mx-auto container-fluid d-flex justify-content-between align-items-center">
+
+         <li class="footer-items grey-clr">All Rights Reserved <span class="text-uppercase text-white"> 2021
+               magia.com</span></li>
+
+         <li class="footer-items grey-clr">Designed By <span class="text-uppercase text-white">Awarno.com</span>
+         </li>
+      </ul>
+   </div>
+
+   <!-- script  -->
+   <script src="./aos/aos.js"></script>
+   <script src=" ./js/index.js"></script>
+   <script>
+      AOS.init();
+   </script>
+</body>
+
+</html>

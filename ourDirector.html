@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>our director</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="spot-bg-clr">
+   <!-- social-bar-fixed  -->
+   <div class="social-fixed"></div>
+   <!-- header  -->
+   <header>
+      <div class="navigation ">
+         <ul class="">
+            <li class="nav-item">
+               <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link active dropdown-toggle" data-bs-toggle="collapse" href="#collapseabout"
+                  id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  aria-controls="collapseabout">
+                  ABOUT
+               </a>
+            </li>
+            <div class="collapse" id="collapseabout">
+               <div class="p-0 card-body">
+                  <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                  <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                  <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+               </div>
+            </div>
+            <li class="nav-item">
+               <a class="nav-link" href="service.html">SERVICES</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapsesector"
+                  id="navbarDropdown about" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  aria-controls="collapseabout">
+                  SECTORS
+               </a>
+            </li>
+            <div class="collapse" id="collapsesector">
+               <div class="p-0 card-body">
+                  <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+                  <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+               </div>
+            </div>
+            <li class="nav-item">
+               <a class="nav-link" href="projects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="blogs.php">BLOG</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="contactUs.html">CONTACT</a>
+            </li>
+         </ul>
+      </div>
+      <span class="bar d-block d-md-none" onclick="expand()"></span>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-0 ">
+         <div class="container py-4">
+            <a class="navbar-brand " href="/"><img src="images/magiLogo.svg" alt="" class="" width="350px"></a>
+            <button class="navbar-toggler" type="button" style="width: 100px;" onclick="expand()">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse d-md-block" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                     <a class="nav-link" aria-current="page" href="/">HOME</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link active dropdown-toggle" href="about.html" id="navbarDropdown about"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ABOUT
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="ourDirector.html">OUR DIRECTOR</a></li>
+                        <li><a class="dropdown-item" href="ourTeam.html">OUR TEAM</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="service.html">SERVICES</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown sectors" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        SECTORS
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sectors.html">OUR SECTORS</a></li>
+                        <li><a class="dropdown-item" href="whatsetmagi.html">WHAT SETS MAGI-A</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="projects.html">PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blogs.php">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contactUs.html">CONTACT</a>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+
+   <!-- our director HOME  -->
+   <div id="director-home-section">
+      <!-- overlay rectangle  -->
+      <!-- overlay rectangle  -->
+      <div class="text-area-director text-uppercase">
+         <h1 class="about-home-title os-regular text-white">OUR<span class="spot-clr"> DIRECTOR</span></h1>
+         <p class="os-light aboutUs-tagline">The Brain Child of <span class="spot-clr os-bold">Magi-A </span></p>
+      </div>
+   </div>
+
+   <!-- section  -->
+   <div class="heading-who-we-are text-center ">
+      <h1 class="side-flags-dark os-light wwd-h about-h-tags mt-5 pb-3">
+         OUR <span class="spot-clr os-bold text-shadow">DIRECTOR</span></h1>
+   </div>
+
+   <div class="our-director-content d-flex flex-wrap justify-content-md-around justify-content-center my-4 mx-auto">
+      <div class="left-tilt-section d-flex flex-column align-items-center d-md-block d-sm-block d-md-block mb-4"
+         data-aos="fade-right" data-aos-once="true" data-aos-duration="1300">
+         <div id="tilt-img" class=" mb-4">
+            <img src="images/director.png" alt="">
+         </div>
+
+         <p><span class="first-para"></span>From star restaurant to cozy
+            cafes, he has experienced it all at
+            the young age of 18 years. It is
+            this experience that makes him a
+            force to be reckoned with in the
+            business</p>
+         <p class="">He knows that the initial 6
+            months of a restaurant’s lifespan
+            are crucial for establishing a
+            name in the industry. He handles
+            this time delicately along with
+            investor, once the business is
+            stable and the marketing is on
+            fire, he hands over the restaurant
+            to the investors.</p>
+
+         <p class="">With Magi-a Mr. Kuvam has
+            placed a new benchmark in the
+            F&B consultancy business.</p>
+
+         <p>Despite his experience he
+            believes a man never stops
+            learning, as a strives everyday to
+            take Magi-a a step further.<span class="last-para"></span></p>
+
+
+
+      </div>
+      <div class="para-section text-left pop-light mt-5" data-aos="fade-left" data-aos-once="true"
+         data-aos-duration="1300">
+
+         <p>Our director,<span> Mr. Kuvam Gujral</span> established Magi-a in 2018 when he saw that many new restaurant/
+            Cafe owners
+            were struggling to run, or get services in terms of restaurant operations & stability in P&L. People get
+            into the restaurant business expecting loads of profits with dreams of franchising out, but fail for the
+            mere reasons of poor support in terms of staffing & services provided by the consultation firm they are
+            linked with.
+
+         </p>
+
+         <p>
+            He noticed how most consultation firms would provide services to 3 to 6 months Initially and then the
+            business tends to drop down, following which the business would suffer huge losses. If the do agree to
+            provide support, they charge a retainer fee, which would be high and not affordable by a business owner
+            already swimming in loss because of their previous experiences.
+         </p>
+
+         <p>
+            He started Magi-a with the goal of creating magic for these Restaurant & Cafe owners and solve all their
+            problems in the blink of an eye. By proving the best services to our existing clients and as well as new
+            clients, we make sure you never have to worry about business failure.
+         </p>
+
+         <p>
+            He grew up in the business, and has experienced the nuances of it first hand. <br> <span>Mr Kuvam </span>
+            does
+            not look at a
+            business through the eyes of an investor. Our old Indian values of, <b>‘Athithi Devo Bhav’</b> are instilled
+            in
+            him. He looks at a restaurant through the eyes of its guests, which is the reason why his consultancy is on
+            spot.
+            His experience in the field comes from him being a restaurant owner himself of a renowned chain. His chain
+            of fine-dining restaurants, Pan-Asia & abroad, serving Modern Indian, Chinese, Continental, Italian,
+            Barbeque Grill Restaurants South Indian & Fusion Food are viewed as some of the best restaurants in the
+            market. Before getting into the family business, he completed his education from Pathway World School.
+         </p>
+
+         <p>
+            He decided it was time to further expand his legacy of over 10 years and established Magi-a as his own
+            company. With hands on experience working in the parental company, he knows the what and what nots of the
+            business.
+         </p>
+
+         <p>To <span>Mr. Kuvam</span>, Magi-a is the future of the F&B consultancy, and for that purpose he trains most
+            of his Franchisees himself. Teaching them how to operate a restaurant business, while following certain SOP
+            and also controlling the pilferages.
+
+         </p>
+
+         <p>
+            We are so confident in Magi-a that <span> Mr. Kuvam</span> states, “If you feel that our services have
+            lacked in terms of operations and management, then you can claim your fees back.” As for him the main aim is
+            client satisfaction.
+            <span> Mr. Kuvam</span> states the worlds most expensive thing is “TRUST” Which is very important for his
+            clients to have
+            on him cause he is trying to create a brand and soon a legacy for them.
+         </p>
+
+         <p>
+            <span> Mr. Kuvam</span> is always very invested in his client’s business, as of it were his own. He finds it
+            a privilege to be able to help his clients right from the scratch to the end of their projects, including,
+            the designing, selection of site, a unique name for the retardant that will reflect its values. He even
+            takes care of negotiating with landlords and trains the investors so they are well prepared to operate their
+            outlets.
+         </p>
+         <p>
+            From star restaurant to cozy cafes, he has experienced it all at the young age of 12 years. It is this
+            experience that makes him a force to be reckoned with in the business.
+         </p>
+         <p>
+            He knows that the initial 6 months of a restaurant’s lifespan are crucial for establishing a name in the
+            industry. He handles this time delicately along with investor and his team.
+         </p>
+         <p>
+            With Magi-a <span>Mr. Kuvam</span> has placed a new benchmark in the F&B consultancy business.
+         </p>
+      </div>
+
+   </div>
+
+   <!-- footer  -->
+
+   <div class="container-fluid mx-auto w-100 h-100 footer-bg d-flex flex-column justify-content-center  ">
+      <!-- footer main container -->
+
+
+      <div
+         class="upperfooter row w-100 d-flex justify-content-center justify-content-md-around align-items-center mx-auto py-3">
+
+         <div class="form-container col-12 col-md-4 mx-auto d-flex flex-column justify-content-center">
+            <h5 class="text-uppercase text-center os-regular">reach out to us</h5>
+
+            <form action="" method="get" class="form-footer col-3">
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="name">Name</label>
+                  </div>
+                  <input type="text" required placeholder="Enter Your Name" name="name">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="email">Email</label>
+                  </div>
+                  <input type="email" required placeholder="Enter Your Email" name="email">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="phone">Phone</label>
+                  </div>
+                  <input type="number" required placeholder="Enter Your Phone" name="phone">
+               </div>
+               <div class="form-input-control">
+                  <div class="label">
+                     <label for="message">Message</label>
+                  </div>
+                  <input type="text" required placeholder="Write Your Message" name="message" />
+               </div>
+               <div class="form-input-control mt-3 px-4"></div>
+               <button class="btn btn-dark os-light rounded-pill d-block mx-auto py-1" style="letter-spacing: 3px;"
+                  type="submit">SUBMIT</button>
+            </form>
+         </div>
+
+         <div class="address col-12 col-md-5">
+
+            <div class="col-auto row d-flex flex-column justify-content-between align-items-center text-center">
+               <!-- logo -->
+               <div class="d-none d-md-block">
+                  <img src="images/magiLogo.svg" alt="logo" width="200px" height="100px">
+               </div>
+               <!-- address -->
+               <div class=" text-white d-none d-md-block">
+                  <h4 class="company-heading m-0 p-0 el-bold">MAGIA HOSPITALITY & CONSULTANCY</h4>
+                  <address class="text-center pop-x-light">
+                     Building No. XX New Delhi 11000X <br>
+                     Email: info@magia.com <br>
+                     Phone: +91 XXXXXXXXXX
+                  </address>
+               </div>
+               <!-- share follow -->
+               <div class=" text-white social-icons">
+                  <h3 class="mb-5 os-light d-none d-md-block">FOLLOW US</h3>
+                  <div class="icons d-flex justify-content-center align-items-center">
+                     <a href="" class="fb"><i class="fab fa-facebook-f"></i></a>
+                     <a href="" class="tw"><i class="fab fa-twitter"></i></a>
+                     <a href="" class="li"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="" class="yt"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="top-btn d-none d-lg-flex col-12 col-md-3 align-items-center justify-content-center ">
+            <!-- <a class="col-2 bg-none text-white d-flex align-items-end justify-content-end " href="#home"> -->
+            <i class="fas fa-arrow-up text-dark bg-warning px-3 py-3 rounded-circle"></i>
+            <!-- </a> -->
+         </div>
+      </div>
+
+      <ul
+         class="list-unstyled lowerFooter p-0 mx-auto container-fluid d-flex justify-content-between align-items-center">
+
+         <li class="footer-items grey-clr">All Rights Reserved <span class="text-uppercase text-white"> 2021
+               magia.com</span></li>
+
+         <li class="footer-items grey-clr">Designed By <span class="text-uppercase text-white">Awarno.com</span></li>
+      </ul>
+   </div>
+
+
+
+
+   <!-- script  -->
+   <script src="./aos/aos.js"></script>
+   <script src=" ./js/index.js"></script>
+   <script>
+      AOS.init();
+   </script>
+</body>
+
+</html>
