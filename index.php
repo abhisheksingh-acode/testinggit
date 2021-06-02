@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home magi-a</title>
   <!-- bootstrap js bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -22,10 +23,7 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
   <!-- external stylesheet -->
-  <link rel="stylesheet" href="css/main.css">
-
-
-  <title>Home magi-a</title>
+  <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
 </head>
 
 <body class="bg-dark">
@@ -310,7 +308,7 @@
                   class="slide-img-box img-fluid"></div>
               <div class="swiper-slide slide17"><img src="./images/portfolio/portfolio17.jpeg" alt=""
                   class="slide-img-box img-fluid"></div>
-              <div class="swiper-slide slide18"><img src="./images/portfolio/portfolio18.jpeg" alt=""
+              <div class="swiper-slide slide18"><img src="./images/portfolio/portfolio18.jpg" alt=""
                   class="slide-img-box img-fluid"></div>
               <div class="swiper-slide slide19"><img src="./images/portfolio/portfolio19.jpeg" alt=""
                   class="slide-img-box img-fluid"></div>
