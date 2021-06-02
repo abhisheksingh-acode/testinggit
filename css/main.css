@@ -605,9 +605,12 @@ body {
 }
 
 .swiper2 .swiper-slide {
-  margin-top: 10px;
+  margin: 10px auto 0;
   width: 220px;
+  padding: 0;
+  position: relative;
   height: 280px;
+  z-index: 3;
 }
 
 .swiper2 .swiper-pagination {
@@ -619,9 +622,9 @@ body {
   display: block;
   width: 220px;
   margin: 0 auto;
+  padding: 0;
   height: 280px;
   background-color: white;
-  position: relative;
   z-index: 3;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -634,10 +637,8 @@ body {
   border: 1px solid white;
   position: absolute;
   z-index: -1;
-  top: 34%;
-  left: 39%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: -5px;
+  left: 18px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -649,10 +650,8 @@ body {
   border: 1px solid white;
   position: absolute;
   z-index: -1;
-  bottom: -37%;
-  right: -24%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  bottom: -5px;
+  right: 18px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -2707,7 +2706,7 @@ address {
     height: 200px;
     border: 1px solid #f6f6f8;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     top: 109%;
     left: 63%;
     -webkit-transform: translate(-55%, -110%);
@@ -2721,7 +2720,7 @@ address {
     height: 200px;
     border: 1px solid #f6f6f8;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     bottom: 105%;
     right: 63%;
     -webkit-transform: translate(55%, 105%);
